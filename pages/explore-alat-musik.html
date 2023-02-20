@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Jelajahi Suku Khas Sumatera Barat!
+    Jelajahi Alat Musik Khas Sumatera Barat!
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -33,6 +33,33 @@
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
   <link id="pagestyle" href="../assets/css/explore.css" rel="stylesheet" />
+  
+  <style>
+    div.scrollmenu {
+      background-color: #fff;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    
+    div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+    
+    div.scrollmenu a:hover {
+      background-color: #d6d6c2;
+      border-radius: 20px;
+    }
+
+    div.scrollmenu a.active {
+      background-color: #d6d6c2;
+      border-radius: 20px;
+    }
+    
+</style>
 
 </head>
 
@@ -433,15 +460,15 @@
   <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
   <div class="card card-body mx-3 mx-md-4 mt-n6 mb-4">
     
-    <!-- START EXPLORE SUKU -->
+    <!-- START EXPLORE ALAT MUSIK -->
     <section class="py-3">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h3 id="title-explore-suku" class="easeAnimateToLeft">Jelajahi Suku Sumatera Barat!</h3>
+            <h3 id="title-explore-alat-musik" class="easeAnimateToLeft">Jelajahi Alat Musik Khas Sumatera Barat!</h3>
           </div>
         </div>
-        <div id="list-explore-suku">
+        <div id="list-explore-alat-musik">
             
         </div>
 
@@ -466,7 +493,7 @@
 
       </div>
     </section>
-    <!-- END EXPLORE SUKU -->
+    <!-- END EXPLORE ALAT MUSIK -->
 
   </div>
 
@@ -544,30 +571,60 @@
         document.getElementsByClassName("page-1")[0].parentElement.classList.add("active");
         document.getElementsByClassName("page-2")[0].style.color = "#7b809a";
         document.getElementsByClassName("page-1")[0].style.color = "white";
-        document.getElementById('title-explore-suku').scrollIntoView();
+        document.getElementById('title-explore-alat-musik').scrollIntoView();
         
-        var list_explore_suku = [
+        var list_explore_alat_musik = [
             {
+                id: "head-image-11",
                 image: "../assets/img/examples/testimonial-6-2.jpg",
-                name: "Suku Minangkabau",
+                name: "Saluang",
                 text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
-                characteristic: ["Ciri 1", "Ciri 2", "Ciri 3"]
+                sub_image: [
+                    {
+                        id: "sub-image-1", // just change the number
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png",
+                    },
+                    {
+                        id: "sub-image-2", // just change the number
+                        image: "https://thumbs.dreamstime.com/b/example-red-tag-example-red-square-price-tag-117502755.jpg",
+                    }
+                ]
             },
             {
+                id: "head-image-21",
                 image: "../assets/img/examples/testimonial-6-2.jpg",
-                name: "Suku Minangkabau",
+                name: "Sarnuai",
                 text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
-                characteristic: ["Ciri 1", "Ciri 2", "Ciri 3"]
+                sub_image: [
+                    {
+                        id: "sub-image-21", // just change the number
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png",
+                    },
+                    {
+                        id: "sub-image-22", // just change the number
+                        image: "https://thumbs.dreamstime.com/b/example-red-tag-example-red-square-price-tag-117502755.jpg",
+                    }
+                ]
             },
             {
+                id: "head-image-31",
                 image: "../assets/img/examples/testimonial-6-2.jpg",
-                name: "Suku Minangkabau",
+                name: "Bansi",
                 text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
-                characteristic: ["Ciri 1", "Ciri 2", "Ciri 3"]
+                sub_image: [
+                    {
+                        id: "sub-image-31", // just change the number
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png",
+                    },
+                    {
+                        id: "sub-image-32", // just change the number
+                        image: "https://thumbs.dreamstime.com/b/example-red-tag-example-red-square-price-tag-117502755.jpg",
+                    }
+                ]
             }
         ]
 
-        appendSuku(list_explore_suku)
+        appendAlatMusik(list_explore_alat_musik)
     }
 
     function loadPage2() {
@@ -575,78 +632,116 @@
         document.getElementsByClassName("page-2")[0].parentElement.classList.add("active");
         document.getElementsByClassName("page-1")[0].style.color = "#7b809a";
         document.getElementsByClassName("page-2")[0].style.color = "white";
-        document.getElementById('title-explore-suku').scrollIntoView();
+        document.getElementById('title-explore-alat-musik').scrollIntoView();
         
-        var list_explore_suku = [
+        var list_explore_alat_musik = [
             {
+                id: "head-image-1",
                 image: "../assets/img/examples/testimonial-6-2.jpg",
-                name: "Suku Minangkabau",
+                name: "Alat Musik ?",
                 text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
-                characteristic: ["Ciri 1", "Ciri 2", "Ciri 3"]
+                sub_image: [
+                    {
+                        id: 1, // random integer unique
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png",
+                    },
+                    {
+                        id: 2, // random integer unique
+                        image: "https://thumbs.dreamstime.com/b/example-red-tag-example-red-square-price-tag-117502755.jpg",
+                    }
+                ]
             }
         ]
 
-        appendSuku(list_explore_suku)
+        appendAlatMusik(list_explore_alat_musik)
     }
 
-    function appendSuku(list_explore_suku) {
+    function appendAlatMusik(list_explore_alat_musik) {
         html = ``
 
-        for (let i = 0; i < list_explore_suku.length; i++) {
-            characteristic = ``
+        for (let i = 0; i < list_explore_alat_musik.length; i++) {
+            sub_image = ``
 
-            for (let j = 0; j < list_explore_suku[i].characteristic.length; j++) {
-                characteristic += 
-                    `<li class="list-group-item" style="border: none">
-                        <span class="badge bg-gradient-info sm">
-                            <i class="fas fa-check"></i>
-                        </span>
-                        `+list_explore_suku[i].characteristic[j]+`
-                    </li>`
+            for (let j = 0; j < list_explore_alat_musik[i].sub_image.length; j++) {
+                sub_image += 
+                    `<a onclick="activeImage(this)" data-parent_id="`+list_explore_alat_musik[i].id+`" data-id="`+list_explore_alat_musik[i].sub_image[j].id+`" data-image="`+list_explore_alat_musik[i].sub_image[j].image+`" data-name="`+list_explore_alat_musik[i].name+`" class="list-alat-musik-`+list_explore_alat_musik[i].id+` `+list_explore_alat_musik[i].sub_image[j].id+`">
+                        <img src="`+list_explore_alat_musik[i].sub_image[j].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToLeft `+list_explore_alat_musik[i].sub_image[j].id+`" loading="lazy" width="150">
+                    </a>`
             }
 
             html += 
                 `<div class="row mt-5">
-                    <div class="col-lg-6 col-sm-6">
-                        <div class="card card-plain">
-                            <div class="card-header p-0 position-relative hovereffect">
-                                <a class="d-block blur-shadow-image">
-                                <img src="`+list_explore_suku[i].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
-                                <div class="overlay">
-                                    <h2 class="text-light font-weight-bold">`+list_explore_suku[i].name+`</h2>
-                                    <a class="info" href="`+list_explore_suku[i].image+`" target="_blank">
-                                      <i class="fa fa-arrows fa-lg"></i>
-                                    </a>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-12 col-md-12">
                         <div class="card card-plain">
                             <div class="card-body px-0">
                                 <h5>
                                     <a href="javascript:;" class="text-dark font-weight-bold easeAnimateToLeft">
-                                        `+list_explore_suku[i].name+`
+                                        `+list_explore_alat_musik[i].name+`
                                     </a>
                                 </h5>
                                 <p class="easeAnimateToLeft">
-                                    `+list_explore_suku[i].text+`
+                                    `+list_explore_alat_musik[i].text+`
                                 </p>
-                                
-                                <h5>
-                                <a href="javascript:;" class="text-dark font-weight-bold easeAnimateToLeft">Ciri - ciri</a>
-                                </h5>
-                                <ul class="list-group easeAnimateToLeft">
-                                    `+characteristic+`
-                                </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-12">
+                        <div class="card card-plain">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card-header p-0 position-relative hovereffect" id="`+list_explore_alat_musik[i].id+`">
+                                        <a class="d-block blur-shadow-image">
+                                        <img src="`+list_explore_alat_musik[i].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
+                                        <div class="overlay">
+                                            <h2 class="text-light font-weight-bold">`+list_explore_alat_musik[i].name+`</h2>
+                                            <a class="info" href="`+list_explore_alat_musik[i].image+`" target="_blank">
+                                              <i class="fa fa-arrows fa-lg"></i>
+                                            </a>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <div class="scrollmenu">
+                                        `+sub_image+`
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>`
         }
 
-        document.getElementById("list-explore-suku").innerHTML = html
+        document.getElementById("list-explore-alat-musik").innerHTML = html
+    }
+
+    function activeImage(attribute) {
+        var id = attribute.getAttribute("data-id")
+        var image = attribute.getAttribute("data-image")
+        var name = attribute.getAttribute("data-name")
+        var parent_id = attribute.getAttribute("data-parent_id")
+
+        const activeElements = document.getElementsByClassName("list-alat-musik-"+parent_id);
+        for (activeElement of activeElements) {
+            activeElement.classList.remove('active');
+        }
+
+        document.getElementsByClassName(id)[0].classList.add("active");
+
+        var html = 
+            `<a class="d-block blur-shadow-image">
+                <img src="`+image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
+                <div class="overlay">
+                    <h2 class="text-light font-weight-bold">`+name+`</h2>
+                    <a class="info" href="`+image+`" target="_blank">
+                      <i class="fa fa-arrows fa-lg"></i>
+                    </a>
+                </div>
+            </a>`
+
+        document.getElementById(parent_id).innerHTML = html
     }
   </script>
 
