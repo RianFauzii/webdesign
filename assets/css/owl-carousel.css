@@ -134,3 +134,16 @@ body{
           padding: 0px 15px 25px 15px;
       }
   }
+
+  .owl-next{
+    margin-top:100px;
+  }
+
+  .owl-prev{
+    margin-top:100px;
+  }
+
+  .owl-carousel {
+    -ms-touch-action: none;
+    touch-action: none;
+  }

@@ -161,3 +161,7 @@
       animation: none;
     }
   }
+
+  .card-menu:hover {
+    margin-top: -10px;
+  }

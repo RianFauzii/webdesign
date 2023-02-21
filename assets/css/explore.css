@@ -52,6 +52,7 @@ body {
   filter: alpha(opacity=0);
   -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
   transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  background: linear-gradient(-45deg, rgba(6,190,244,0.75) 0%, rgba(45,112,253,0.6) 100%);
 }
 
 .hovereffect img {
@@ -67,7 +68,7 @@ body {
   text-align: center;
   position: relative;
   font-size: 17px;
-  background: rgba(0,0,0,0.4);
+  background: linear-gradient(-45deg, rgba(6,190,244,0.75) 0%, rgba(45,112,253,0.6) 100%);
   -webkit-transform: translatey(-100px);
   -ms-transform: translatey(-100px);
   transform: translatey(-100px);
@@ -81,8 +82,6 @@ body {
   display: inline-block;
   text-transform: uppercase;
   color: #fff;
-  border: 1px solid #333333;
-  background-color: #333333;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: all 0.4s ease;
