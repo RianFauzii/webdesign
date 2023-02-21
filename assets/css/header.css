@@ -1,0 +1,163 @@
+.box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  .infinityBounce {
+    animation-name: infinityBounce;
+    animation-timing-function: ease;
+  }
+
+  @keyframes infinityBounce {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .singleBounce {
+    width: 100%;
+    animation: singleBounce 2s;
+  }
+
+  @keyframes singleBounce {
+    from {
+      width: 0%;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  /* Typewriter effect 1 */
+  @keyframes typing {
+
+    0.0000%,
+    27.3488% {
+      content: "";
+    }
+
+    1.1395%,
+    26.2093% {
+      content: "T";
+    }
+
+    2.2791%,
+    25.0698% {
+      content: "Tr";
+    }
+
+    3.4186%,
+    23.9302% {
+      content: "Tra";
+    }
+
+    4.5581%,
+    22.7907% {
+      content: "Trad";
+    }
+
+    5.6977%,
+    21.6512% {
+      content: "Tradi";
+    }
+
+    6.8372%,
+    20.5116% {
+      content: "Tradis";
+    }
+
+    7.9767%,
+    19.3721% {
+      content: "Tradisi";
+    }
+
+
+    30.7674%,
+    51.2791% {
+      content: "";
+    }
+
+    31.9070%,
+    50.1395% {
+      content: "B";
+    }
+
+    33.0465%,
+    49.0000% {
+      content: "Bu";
+    }
+
+    34.1860%,
+    47.8605% {
+      content: "Bud";
+    }
+
+    35.3256%,
+    46.7209% {
+      content: "Buda";
+    }
+
+    36.4651%,
+    45.5814% {
+      content: "Buday";
+    }
+
+    37.6047%,
+    44.4419% {
+      content: "Budaya";
+    }
+
+
+  }
+
+  @keyframes blink {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .typewriter {
+    --caret: currentcolor;
+  }
+
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+
+
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+  }
