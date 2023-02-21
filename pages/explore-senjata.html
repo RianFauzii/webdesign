@@ -39,7 +39,7 @@
         div.scrollmenu {
             background-color: #fff;
             overflow-y: auto;
-            max-height: 130px;
+            max-height: 200px;
         }
         
         div.scrollmenu a {
@@ -65,7 +65,7 @@
         div.scrollmenu {
             background-color: #fff;
             overflow-y: auto;
-            max-height: 200px;
+            max-height: 300px;
         }
         
         div.scrollmenu a {
@@ -91,7 +91,7 @@
         div.scrollmenu {
             background-color: #fff;
             overflow-y: auto;
-            max-height: 270px;
+            max-height: 470px;
         }
         
         div.scrollmenu a {
@@ -161,7 +161,7 @@
                 Jelajahi Suku, Rumah Adat, Bahasa, Pakaian Adat, hingga kesenian Khas Sumatera Barat!
               </p>
               <div class="github-buttons">
-                <a href="javascript:void(0)" onclick="scrollToTitle()" class="btn bg-gradient-primary mb-5 mb-sm-0">
+                <a href="javascript:void(0)" onclick="scrollToContent()" class="btn bg-gradient-primary mb-5 mb-sm-0">
                     Mulai!
                 </a>
               </div>
@@ -182,7 +182,7 @@
   <div class="card card-body mx-3 mx-md-4 mt-n6 mb-4">
     
     <!-- START EXPLORE SENJATA -->
-    <section class="py-3">
+    <section class="py-3" id="content">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -190,7 +190,6 @@
               <span class="material-icons" style="size:50px">
                 arrow_circle_left
               </span>
-              Kembali
             </a>
             <h3 id="title-explore-rumah-adat" class="easeAnimateToLeft">Jelajahi Senjata Khas Sumatera Barat!</h3>
           </div>
@@ -305,62 +304,54 @@
         var list_explore_rumah_adat = [
             {
                 id: "head-image-11",
-                image: "../assets/img/senjata/kurambiak.jpg",
+                image: "../assets/img/senjata/KURAMBIAK.jpg",
                 name: "Kurambiak",
                 text: "Senjata ini merupakan pisau genggam kecil yang bentuknya melengkung, digunakan oleh pendekar Minangkabau dan tersebar ke Indonesia, Malaysia, dan Filipina. Di Minangkabau, senjata ini disebut kurambiak/karambiak, sedangkan negara barat menyebutnya karambit. Kurambiak bisa digunakan untuk menyayat maupun merobek anggota tubuh lawan dengan cepat dan tak terdeteksi, hal inilah yang membuat kurambiak termasuk senjata yang berbahaya.",
                 sub_image: [
                     {
                         id: "sub-image-1", // just change the number
-                        image: "../assets/img/senjata/kurambiak1.jpg",
+                        image: "../assets/img/senjata/KURAMBIAK.jpg",
                     },
                     {
                         id: "sub-image-2", // just change the number
-                        image: "../assets/img/senjata/kurambiak2.jpg",
+                        image: "../assets/img/senjata/KURAMBIAK1.jpg",
                     }
-                    // {
-                    //     id: "sub-image-3", // just change the number
-                    //     image: "https://www.shutterstock.com/image-photo/example-word-written-on-wooden-260nw-1765482248.jpg",
-                    // },
-                    // {
-                    //     id: "sub-image-4", // just change the number
-                    //     image: "https://www.shutterstock.com/image-photo/example-word-written-on-wooden-260nw-1765482248.jpg",
-                    // },
-                    // {
-                    //     id: "sub-image-5", // just change the number
-                    //     image: "https://www.shutterstock.com/image-photo/example-word-written-on-wooden-260nw-1765482248.jpg",
-                    // }
                 ]
             },
             {
                 id: "head-image-21",
-                image: "../assets/img/senjata/sumpitan.jpg",
+                image: "../assets/img/senjata/SUMPITAN.jpg",
                 name: "Sumpitan",
                 text: "Sumpitan merupakan senjata yang digunakan untuk berperang, berburu, atau bertempur secara terbuka. Senjata ini memiliki daya tembak dan akurasi yang sangat baik hingga 200 meter. Senjata ini memiliki bentuk seperti tabung kecil, sehingga memungkinkan panah kecil yang dimasukkan dan ditembakan melesat jauh menuju sasaran. Sumpitan memiliki fungsi untuk berburu hewan, yang merupakan salah satu peninggalan leluhur, sehingga masih dilestarikan dan digunakan untuk berburu oleh suku Minang. Senjata ini tidak merusak alam dan hemat biaya, karena bahan yang digunakan sangat alami.",
                 sub_image: [
                     {
                         id: "sub-image-21", // just change the number
-                        image: "../assets/img/senjata/sumpitan1.jpg",
+                        image: "../assets/img/senjata/SUMPITAN.jpg",
+                    },
+                    {
+                        id: "sub-image-21", // just change the number
+                        image: "../assets/img/senjata/SUMPITAN1.jpg",
                     },
                     {
                         id: "sub-image-22", // just change the number
-                        image: "../assets/img/senjata/Sumpitan_atau_tulup.jpg",
+                        image: "../assets/img/senjata/SUMPITAN2.jpg",
                     }
                 ]
             },
             {
                 id: "head-image-31",
-                image: "../assets/img/senjata/piarik.jpg",
+                image: "../assets/img/senjata/PIARIK.jpg",
                 name: "Piarik",
                 text: "Piarik merupakan senjata tradisional Minangkabau yang memiliki bentuk tombak dengan tiga mata tajam seperti Trisula. Dilihat dari bentuknya, piarik mirip dengan senjata utama Dewa Siwa dalam kepercayaan Hindu, karena sebelum masuknya Islam ke Sumatera Barat, masyarakat Minang masih menganut agama Hindu. Senjata tradisional ini seringkali digunakan masyarakat Sumatera Barat untuk berburu binatang yang berukuran besar, dan digunakan sebagai alat pemotong serbaguna. Kini, piarik masih dijaga dan dilestarikan dengan baik oleh warga Minangkabau, dan sudah menjadi salah satu warisan budaya bangsa Indonesia.",
                 sub_image: [
                     {
                         id: "sub-image-31", // just change the number
-                        image: "../assets/img/senjata/piarik1.jpg",
+                        image: "../assets/img/senjata/PIARIK.jpg",
+                    },
+                    {
+                        id: "sub-image-32", // just change the number
+                        image: "../assets/img/senjata/PIARIK1.jpg",
                     }
-                    // {
-                    //     id: "sub-image-32", // just change the number
-                    //     image: "https://thumbs.dreamstime.com/b/example-red-tag-example-red-square-price-tag-117502755.jpg",
-                    // }
                 ]
             }
         ]
@@ -378,17 +369,17 @@
         var list_explore_rumah_adat = [
             {
                 id: "head-image-1",
-                image: "../assets/img/senjata/ruduih.jpg",
+                image: "../assets/img/senjata/RUDUIH.jpg",
                 name: "Ruduih",
                 text: "Ruduih merupakan senjata tradisional sejenis golok, yang berfungsi untuk bertempur di medan perang. Selain untuk berperang, senjata ini terkadang juga digunakan dalam kegiatan sehari-hari seperti bertani atau berkebun. Bentuknya menyerupai Klewang yang memiliki bilah tajam pada satu sisi, namun sisi bilah pada klewang tajam dan lurus, sementara ruduih sedikit cembung ke dalam. Bentuk sarung (warangka)nya berbeda, klewang memiliki sarung yang mirip dengan sosok naga, sedangkan ruduih dibuat sederhana seperti golok biasa.",
                 sub_image: [
                     {
                         id: 1, // random integer unique
-                        image: "../assets/img/senjata/ruduih.1.png",
+                        image: "../assets/img/senjata/RUDUIH.jpg",
                     },
                     {
                         id: 2, // random integer unique
-                        image: "../assets/img/senjata/ruduih2.jpg",
+                        image: "../assets/img/senjata/RUDUIH1.jpg",
                     }
                 ]
             },
@@ -424,7 +415,7 @@
             for (let j = 0; j < list_explore_rumah_adat[i].sub_image.length; j++) {
                 sub_image += 
                     `<a onclick="activeImage(this)" data-parent_id="`+list_explore_rumah_adat[i].id+`" data-id="`+list_explore_rumah_adat[i].sub_image[j].id+`" data-image="`+list_explore_rumah_adat[i].sub_image[j].image+`" data-name="`+list_explore_rumah_adat[i].name+`" class="list-alat-musik-`+list_explore_rumah_adat[i].id+` `+list_explore_rumah_adat[i].sub_image[j].id+` mt-2">
-                        <img src="`+list_explore_rumah_adat[i].sub_image[j].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToLeft `+list_explore_rumah_adat[i].sub_image[j].id+`" loading="lazy" width="150">
+                        <img src="`+list_explore_rumah_adat[i].sub_image[j].image+`" alt="`+list_explore_rumah_adat[i].name+`" class="img-fluid shadow border-radius-lg easeAnimateToLeft `+list_explore_rumah_adat[i].sub_image[j].id+`" loading="lazy" width="150">
                     </a>`
             }
 
@@ -450,7 +441,7 @@
                                 <div class="col-8 d-flex align-items-stretch">
                                     <div class="card-header p-0 position-relative hovereffect" id="`+list_explore_rumah_adat[i].id+`">
                                         <a class="d-block blur-shadow-image">
-                                        <img src="`+list_explore_rumah_adat[i].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
+                                        <img src="`+list_explore_rumah_adat[i].image+`" alt="`+list_explore_rumah_adat[i].name+`" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
                                         <div class="overlay">
                                             <h2 class="text-light font-weight-bold">`+list_explore_rumah_adat[i].name+`</h2>
                                             <a class="info" href="`+list_explore_rumah_adat[i].video+`" target="_blank">
@@ -491,7 +482,7 @@
 
         var html = 
             `<a class="d-block blur-shadow-image">
-                <img src="`+image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
+                <img src="`+image+`" alt="`+name+`" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
                 <div class="overlay">
                     <h2 class="text-light font-weight-bold">`+name+`</h2>
                     <a class="info" href="`+image+`" target="_blank">
@@ -501,6 +492,10 @@
             </a>`
 
         document.getElementById(parent_id).innerHTML = html
+    }
+    
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView();
     }
   </script>
 

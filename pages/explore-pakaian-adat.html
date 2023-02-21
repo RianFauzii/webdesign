@@ -39,7 +39,7 @@
         div.scrollmenu {
             background-color: #fff;
             overflow-y: auto;
-            max-height: 130px;
+            max-height: 200px;
         }
         
         div.scrollmenu a {
@@ -65,7 +65,7 @@
         div.scrollmenu {
             background-color: #fff;
             overflow-y: auto;
-            max-height: 200px;
+            max-height: 300px;
         }
         
         div.scrollmenu a {
@@ -91,7 +91,7 @@
         div.scrollmenu {
             background-color: #fff;
             overflow-y: auto;
-            max-height: 270px;
+            max-height: 470px;
         }
         
         div.scrollmenu a {
@@ -165,7 +165,7 @@
                 Jelajahi Suku, Rumah Adat, Bahasa, Pakaian Adat, hingga kesenian Khas Sumatera Barat!
               </p>
               <div class="github-buttons">
-                <a href="javascript:void(0)" onclick="scrollToTitle()" class="btn bg-gradient-primary mb-5 mb-sm-0">
+                <a href="javascript:void(0)" onclick="scrollToContent()" class="btn bg-gradient-primary mb-5 mb-sm-0">
                     Mulai!
                 </a>
               </div>
@@ -185,7 +185,7 @@
   <div class="card card-body mx-3 mx-md-4 mt-n6 mb-4">
     
     <!-- START EXPLORE SENJATA -->
-    <section class="py-3">
+    <section class="py-3" id="content">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -194,7 +194,6 @@
               <span class="material-icons" style="size:50px">
                 arrow_circle_left
               </span>
-              Kembali
             </a>
            
             <h3 id="title-explore-rumah-adat" class="easeAnimateToLeft">Jelajahi Pakaian Adat Sumatera Barat!</h3>
@@ -311,69 +310,49 @@
         var list_explore_rumah_adat = [
             {
                 id: "head-image-11",
-                image: "../assets/img/pakaian/Baju_Batusangkar.jpeg",
+                image: "../assets/img/pakaian/BATUSANGKAR.jpg",
                 name: "Baju Batu Sangkar",
                 text: "Nama pakaian adat ini diambil dari salah satu kota di Sumatera Barat. Bentuk pakaiannya berupa karung dan songket, dimana pada bagian tangan dan leher ada sulaman emas. Sementara pada pria memakai celana panjang dan kain songket pada tubuhnya. Bagian tangan dan leher si border dengan benang emas. Pada bagian kepala menggunakan topeng yang dikenal dengan Saluak.",
                 sub_image: [
                     {
                         id: "sub-image-1", // just change the number
-                        image: "../assets/img/pakaian/baju_batusangkar1.jpg",
+                        image: "../assets/img/pakaian/BATUSANGKAR.jpg",
                     },
                     {
                         id: "sub-image-2", // just change the number
-                        image: "../assets/img/pakaian/baju_batusangkar2.jpg",
-                    },
-                    {
-                        id: "sub-image-3", // just change the number
-                        image: "../assets/img/pakaian/baju_batusangkar3.jpg",
+                        image: "../assets/img/pakaian/BATUSANGKAR1.jpg",
                     }
-                    // {
-                    //     id: "sub-image-4", // just change the number
-                    //     image: "https://www.shutterstock.com/image-photo/example-word-written-on-wooden-260nw-1765482248.jpg",
-                    // },
-                    // {
-                    //     id: "sub-image-5", // just change the number
-                    //     image: "https://www.shutterstock.com/image-photo/example-word-written-on-wooden-260nw-1765482248.jpg",
-                    // }
                 ]
             },
             {
                 id: "head-image-21",
-                image: "../assets/img/pakaian/Baju_Batabue.jpeg",
+                image: "../assets/img/pakaian/BATABUE.jpg",
                 name: "Baju Batabue",
                 text: "Jika pakaian adat Sumatera Barat sebelumnya identik dengan warna mencolok, berbeda halnya dengan ini. Warna yang paling sering digunakan dalam Batabue adalah warna merah, biru, lembayung, dan hitam. Biasanya mengenakan busana berwarna gelap dengan taburan benang emas yang membuatnya semakin terlihat berkilauan. Taburan benang emas dalam pakaian adat Sumatera Barat ini memiliki makna filosofis yang cukup unik, yakni menandakan tentang betapa luasnya kekayaan alam Minangkabau. Baju batabue ini terdiri atas baju kurung serta pernak pernik di sekujur busana. Corak dan motifnya tentu bermacam-macam dan disesuikan dengan selera pemakainya.",
                 sub_image: [
                     {
                         id: "sub-image-21", // just change the number
-                        image: "../assets/img/pakaian/baju_batabue1.jpg",
+                        image: "../assets/img/pakaian/BATABUE.jpg",
                     },
                     {
                         id: "sub-image-22", // just change the number
-                        image: "../assets/img/pakaian/baju_batabue2.jpg",
-                    },
-                    {
-                        id: "sub-image-23", // just change the number
-                        image: "../assets/img/pakaian/baju_batabue3.jpg",
+                        image: "../assets/img/pakaian/BATABUE1.jpg",
                     }
                 ]
             },
             {
                 id: "head-image-31",
-                image: "../assets/img/pakaian/bajubundokanduang.jpeg",
+                image: "../assets/img/pakaian/BUNDOKANDUANG.jpg",
                 name: "Baju Bundo Kanduang",
                 text: "Pakaian adat Sumatera Barat berikutnya biasa dipakai oleh kaum wanita Minangkabau. Limpapeh rumah nan gadang atau bundo kanduang ini memiliki ciri khas yaitu bagian kepalanya yang memiliki bentuk seperti atap rumah Gadang Sumatera Barat. Secara umum, pakaian ini memiliki desain yang berbeda-beda namun bentuknya menyerupai satu sama lain. Makna dan keunikan pakaian tradisional ini adalah melambangkan kebesaran. Makna kebesaran bagi perempuan terlebih para istri, yakni tiang tengah dari bangunan rumah. Peran istri atau ibu dalam rumah tangga yakni sebagai pengimbang serta memperkokoh hubungan keluarga.",
                 sub_image: [
                     {
                         id: "sub-image-31", // just change the number
-                        image: "../assets/img/pakaian/bajubundokanduang1.jpeg",
+                        image: "../assets/img/pakaian/BUNDOKANDUANG.jpg",
                     },
                     {
                         id: "sub-image-32", // just change the number
-                        image: "../assets/img/pakaian/bajubundokanduang2.jpeg",
-                    },
-                    {
-                        id: "sub-image-33", // just change the number
-                        image: "../assets/img/pakaian/bajubundokanduang3.jpeg",
+                        image: "../assets/img/pakaian/BUNDOKANDUANG1.jpg",
                     }
                 ]
             }
@@ -392,21 +371,17 @@
         var list_explore_rumah_adat = [
             {
                 id: "head-image-1",
-                image: "../assets/img/pakaian/pakaian-penghulu.png",
+                image: "../assets/img/pakaian/PENGHULU.jpg",
                 name: "Pakaian Penghulu",
                 text: "Pakaian penghulu merupakan pakaian adat Minang yang digunakan oleh kaum pria. Baju ini juga disebut sebagai Baju Pemangku Adat. Baju ini tidak dapat digunakan oleh sembarang orang dan ada tata cara tertentu agar dapat mengenakannya. Jaman dulu, pakaian ini hanya boleh digunakan oleh kepala suku. Baju Penghulu memiliki warna hitam yang melambangkan ketegasan dan kepemimpinan. Kaum pria merupakan pemimpin wanita. Di samping itu, karena baju ini hanya boleh digunakan oleh kepala suku, maka baju ini juga melambangkan kepemimpinan suku.",
                 sub_image: [
                     {
                         id: 1, // random integer unique
-                        image: "../assets/img/pakaian/pakaian-penghulu1.png",
+                        image: "../assets/img/pakaian/PENGHULU.jpg",
                     },
                     {
                         id: 2, // random integer unique
-                        image: "../assets/img/pakaian/pakaian-penghulu2.png",
-                    },
-                    {
-                        id: 3, // random integer unique
-                        image: "../assets/img/pakaian/pakaian-penghulu3.png",
+                        image: "../assets/img/pakaian/PENGHULU1.jpg",
                     }
                 ]
             }
@@ -426,7 +401,7 @@
             for (let j = 0; j < list_explore_rumah_adat[i].sub_image.length; j++) {
                 sub_image += 
                     `<a onclick="activeImage(this)" data-parent_id="`+list_explore_rumah_adat[i].id+`" data-id="`+list_explore_rumah_adat[i].sub_image[j].id+`" data-image="`+list_explore_rumah_adat[i].sub_image[j].image+`" data-name="`+list_explore_rumah_adat[i].name+`" class="list-alat-musik-`+list_explore_rumah_adat[i].id+` `+list_explore_rumah_adat[i].sub_image[j].id+` mt-2">
-                        <img src="`+list_explore_rumah_adat[i].sub_image[j].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToLeft `+list_explore_rumah_adat[i].sub_image[j].id+`" loading="lazy" width="150">
+                        <img src="`+list_explore_rumah_adat[i].sub_image[j].image+`" alt="`+list_explore_rumah_adat[i].name+`" class="img-fluid shadow border-radius-lg easeAnimateToLeft `+list_explore_rumah_adat[i].sub_image[j].id+`" loading="lazy" width="150">
                     </a>`
             }
 
@@ -452,7 +427,7 @@
                                 <div class="col-8 d-flex align-items-stretch">
                                     <div class="card-header p-0 position-relative hovereffect" id="`+list_explore_rumah_adat[i].id+`">
                                         <a class="d-block blur-shadow-image">
-                                        <img src="`+list_explore_rumah_adat[i].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
+                                        <img src="`+list_explore_rumah_adat[i].image+`" alt="`+list_explore_rumah_adat[i].name+`" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
                                         <div class="overlay">
                                             <h2 class="text-light font-weight-bold">`+list_explore_rumah_adat[i].name+`</h2>
                                             <a class="info" href="`+list_explore_rumah_adat[i].video+`" target="_blank">
@@ -503,6 +478,10 @@
             </a>`
 
         document.getElementById(parent_id).innerHTML = html
+    }
+
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView();
     }
   </script>
 

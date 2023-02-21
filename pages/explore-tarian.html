@@ -82,7 +82,7 @@
                 Jelajahi Suku, Rumah Adat, Bahasa, Pakaian Adat, hingga kesenian Khas Sumatera Barat!
               </p>
               <div class="github-buttons">
-                <a href="javascript:void(0)" onclick="scrollToTitle()" class="btn bg-gradient-primary mb-5 mb-sm-0">
+                <a href="javascript:void(0)" onclick="scrollToContent()" class="btn bg-gradient-primary mb-5 mb-sm-0">
                     Mulai!
                 </a>
               </div>
@@ -103,7 +103,7 @@
   <div class="card card-body mx-3 mx-md-4 mt-n6 mb-4">
     
     <!-- START EXPLORE TARIAN -->
-    <section class="py-3">
+    <section class="py-3" id="content">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -111,7 +111,6 @@
               <span class="material-icons" style="size:50px">
                 arrow_circle_left
               </span>
-              Kembali
             </a>
             <h3 id="title-explore-tarian" class="easeAnimateToLeft">Jelajahi Tarian Khas Sumatera Barat!</h3>
           </div>
@@ -225,19 +224,19 @@
         
         var list_explore_tarian = [
             {
-                image: "../assets/img/Tari/tari piring.jpg",
+                image: "../assets/img/Tari/TARI-PIRING.jpg",
                 name: "Tari Piring",
                 text: "Tari piring merupakan tarian tradisional Minangkabau yang menampilkan atraksi piring. Dalam tarian ini, para penari mengayunkan piring di tangannya mengikuti gerakan-gerakan cepat yang teratur tanpa membuat satupun piring yang terlepas dari tangan. Tari piring berasal dari daerah Solok, Sumatera Barat yang menurut legenda tarian ini muncul dengan fungsi sebagai tarian dalam upacara kesuburan. Tarian ini juga menjadi salah satu bentuk seni tradisional yang banyak menyimpan nilai-nilai keindahan yang cukup tinggi dan mengandung nilai-nilai kebudayaan leluhur yang sangat mendalam. Selain itu, tari piring juga merupakan ritual ucapan rasa syukur masyarakat setempat terhadap para dewa setelah mendapatkan hasil panen yang melimpah ruah, dengan membawa sesaji dalam bentuk makanan yang diletakkan dalam piring sambil melangkah dengan gerakan yang dinamis.",
                 video: "https://www.youtube.com/watch?v=r6hQomWsHAE"
             },
             {
-                image: "../assets/img/Tari/tari pasambahan.jpg",
+                image: "../assets/img/Tari/TARI-PASAMBAHAN.jpg",
                 name: "Tari Pasambahan Minang",
                 text: "Tari Pasambahan biasanya ditampilkan dalam acara sambutan atau pembukaan suatu acara. Tari Pasambahan merupakan tari penghormatan dalam acara-acara di Minangkabau. Sebagai wujud rasa hormat terhadap tamu yang datang. Selain itu, penampilan tarian ini untuk menunjukkan hati yang bersih dan niat tulus dari tuan rumah dalam menerima tamu.Selain penyambutan tamu dan pembukaan acara, Tari Pasambahan ditampilkan juga dalam acara pernikahan yang disebut alek urang minang (pernikahan orang Minangkabau). Tari tersebut sebagai ucapan selamat datang kepada tamu dan sebagai tanda acara dimulai.",
                 video: "https://youtu.be/BjGvZVmxQbY"
             },
             {
-                image: "../assets/img/Tari/Tari Ambek-Ambek Koto Anau.jpeg",
+                image: "../assets/img/Tari/TARI-AMBEK.jpg",
                 name: "Tari Ambek-Ambek Koto Anau",
                 text: "Tarian yang satu ini berasal dari daerah Koto Anau, Lembang Jaya, Solok, Sumatera Barat, yang merupakan mimik anak-anak ketika mereka bermain, bercanda, pura-pura berkelahi yang dilengkapi dengan menggunakan gerakan pencak silat atau olah gerak dan rasa sebagai satu bentuk materi permainan anak Nagari Minang. Awalnya tarian ini dijadikan sebagai sarana ritual atau kegiatan agama dalam suatu kegiatan masyarakat yang bertujuan untuk memperkukuh ajaran agama Islam karena seluruh masyarakat di nigari koto anau beragama islam. Hal ini berkaitan dengan prinsip hidup masyarakat Minangkabau yang memegang teguh aturan adat, sesuai dengan pepatah adat Minangkabau adat basandi syarak, syarak basandi kitabullah.",
                 video: "https://youtu.be/g2HWY6vjNxo"
@@ -256,7 +255,7 @@
         
         var list_explore_tarian = [
             {
-                image: "../assets/img/Tari/Tari Payung.jpg",
+                image: "../assets/img/Tari/TARI-PAYUNG.jpg",
                 name: "Tari Payung",
                 text: "Tari Payung adalah tarian tradisional khas Minangkabau yang berasal dari Provinsi Sumatera Barat. Tari Payung merupakan jenis tari berpasangan yang ditarikan penari berjumlah genap, yang biasanya berjumlah tiga pasang. Baca juga: Tari Seudati: Gerakan, Pola Lantai, Properti, Iringan, dan Maknanya Sebagai tari pergaulan, Tari Payung berkisah tentang rasa cinta dan kasih sayang. Karena keunikan dan keindahannya, maka pertunjukkan Tari Payung kerap ditampilkan dalam acara besar seperti pertunjukkan seni, pameran, maupun perhelatan resmi lainnya.",                
                 video: "https://youtu.be/NcQbkVu1gw4"
@@ -276,7 +275,7 @@
                         <div class="card card-plain">
                             <div class="card-header p-0 position-relative hovereffect">
                                 <a class="d-block blur-shadow-image">
-                                <img src="`+list_explore_tarian[i].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
+                                <img src="`+list_explore_tarian[i].image+`" alt="`+list_explore_tarian[i].name+`" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
                                 <div class="overlay">
                                     <h2 class="text-light font-weight-bold">`+list_explore_tarian[i].name+`</h2>
                                     <a class="info vid" href="`+list_explore_tarian[i].video+`" target="_blank">
@@ -305,6 +304,10 @@
         }
 
         document.getElementById("list-explore-tarian").innerHTML = html
+    }
+
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView();
     }
   </script>
 

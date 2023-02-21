@@ -65,7 +65,7 @@
                 Sambutlah keanekaragaman budaya Sumatera Barat dengan hati terbuka di sini!
               </p>
               <div class="github-buttons">
-                <a href="javascript:void(0)" onclick="scrollToTitle()" class="btn bg-gradient-primary mb-5 mb-sm-0">
+                <a onclick="scrollToMenu('card-menu')"onclick="scrollToTitle()" class="btn bg-gradient-primary mb-5 mb-sm-0">
                   Mulai!
                 </a>
               </div>
@@ -101,30 +101,30 @@
         <div class="row">
 
           <div class="col-lg-2 col-md-4 col-6 mt-5">
-            <a href="#suku">
+            <a onclick="scrollToMenu('suku')">
               <div class="card card-menu">
                 <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide1.JPG" rel="nofollow"
                   alt="Keragaman Suku">
                 <div class="card-body">
-                  Suku
+                  Suku Adat
                 </div>
               </div>
             </a>
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 mt-5">
-            <a href="#bahasa">
+            <a onclick="scrollToMenu('bahasa')">
               <div class="card card-menu">
                 <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide31.JPG" rel="nofollow"
                   alt="Keragaman Bahasa">
                 <div class="card-body">
-                  Bahasa
+                  Bahasa Daerah
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-2 col-md-4 col-6 mt-5">
-            <a href="#rumah">
+            <a onclick="scrollToMenu('rumah')">
               <div class="card card-menu">
                 <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide28.JPG" rel="nofollow"
                   alt="Keragaman Rumah Adat">
@@ -135,7 +135,7 @@
             </a>
           </div>
           <div class="col-lg-2 col-md-4 col-6 mt-5">
-            <a href="#pakaian">
+            <a honclick="scrollToMenu('pakaian')">
               <div class="card card-menu">
                 <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide34.JPG" rel="nofollow"
                   alt="Keragaman Pakaian Adat">
@@ -147,20 +147,20 @@
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 mt-5">
-            <a href="#makanan">
+            <a onclick="scrollToMenu('makanan')">
               <div class="card card-menu">
                 <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide18.JPG" rel="nofollow"
                   alt="Keragaman Makanan">
                 <div class="card-body">
-                  Makanan
+                  Makanan Khas
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-2 col-md-4 col-6 mt-5">
-            <a href="#kesenian">
+            <a onclick="scrollToMenu('kesenian')">
               <div class="card card-menu">
-                <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide5.jpg" rel="nofollow"
+                <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide5.JPG" rel="nofollow"
                   alt="Kesenian Tradisional">
                 <div class="card-body">
                   Kesenian Tradisional
@@ -247,7 +247,7 @@
       </div>
     </div>
     
-    <div class="mt-4" id="rumah" style="width: auto; height: auto; justify-content: center;">
+    <div class="mt-4" id="rumah" style="width: auto; height: auto; justify-content: center; display: none;">
       <div class="position-relative">
         <div class="position-absolute top-0 start-0">
           <h5 class="text-dark font-weight-bold">
@@ -297,7 +297,7 @@
 
     </div>
     
-    <div class="mt-4" id="makanan" style="width: auto; height: auto; justify-content: center;">
+    <div class="mt-4" id="makanan" style="width: auto; height: auto; justify-content: center; display: none;">
       <div class="position-relative">
         <div class="position-absolute top-0 start-0">
           <h5 class="text-dark font-weight-bold">
@@ -640,15 +640,15 @@
     function loadTopSuku() {
       var list_top_suku = [
           {
-              image: "https://i.ibb.co/k9ybf3Q/suku-minangkabau.jpg",
+              image: "../assets/img/suku/MINANGKABAU.jpg",
               name: "Suku Minangkabau"
           },
           {
-              image: "https://i.ibb.co/NCW59Y9/20171108-063810-mandailing-bukan-batak-sejarah-dan-mitologi-jangan-dicampur-aduk.jpg",
+              image: "../assets/img/suku/BATAK-MANDALING.jpg",
               name: "Suku Batak Mandailing"
           },
           {
-              image: "https://i.ibb.co/CV4Q9fp/SUKU-MENTAWAI.jpg",
+              image: "../assets/img/suku/MENTAWAI.jpg",
               name: "Suku Mentawai"
           }
       ]
@@ -681,17 +681,17 @@
         var list_top_rumah_adat = [
             {
                 id: "head-image-11",
-                image: "https://i.ibb.co/qj48WHC/rumahgadang.jpg",
+                image: "../assets/img/rumah/RUMAH-GADANG.jpg",
                 name: "Rumah Gadang"
             },
             {
                 id: "head-image-21",
-                image: "https://rimbakita.com/wp-content/uploads/2020/07/Rumah-Gonjong-Ampek-Baanjuang.jpg",
+                image: "../assets/img/rumah/RUMAH-GONJONG-AMPEK.jpg",
                 name: "Rumah Gonjong Ampek"
             },
             {
                 id: "head-image-31",
-                image: "https://i.ibb.co/5kw1KNz/rumahgonjonganam.jpg",
+                image: "../assets/img/rumah/RUMAH-GONJONG-ANAM.jpg",
                 name: "Rumah Gonjong Anam"
             }
         ]
@@ -724,22 +724,22 @@
         var list_top_pakaian_adat = [
             {
                 id: "head-image-11",
-                image: "https://i.ibb.co/cktDqsX/Baju-Batusangkar.webp",
+                image: "../assets/img/pakaian/BATUSANGKAR.jpg",
                 name: "Baju Batu Sangkar"
             },
             {
                 id: "head-image-21",
-                image: "https://i.ibb.co/b7JDBLL/Baju-Batabue.webp",
+                image: "../assets/img/pakaian/BATABUE.jpg",
                 name: "Baju Batabue"
             },
             {
                 id: "head-image-31",
-                image: "https://i.ibb.co/tH4khxX/bajubundokanduang.webp",
+                image: "../assets/img/pakaian/BUNDOKANDUANG.jpg",
                 name: "Baju Bundo Kanduang"
             },
             {
                 id: "head-image-31",
-                image: "https://i.ibb.co/0BLBS3k/pakaian-penghulu1.jpg",
+                image: "../assets/img/pakaian/PENGHULU.jpg",
                 name: "Baju Penghulu"
             }
         ]
@@ -771,15 +771,15 @@
     function loadTopMakanan() {
       var list_top_makanan = [
           {
-              image: "https://i.ibb.co/pjd5NSf/rendang.webp",
+              image: "../assets/img/makanan/RENDANG.jpg",
               name: "Rendang"
           },
           {
-              image: "https://i.ibb.co/1rrgWfX/satepadang.webp",
+              image: "../assets/img/makanan/SATE-PADANG.jpg",
               name: "Sate Padang"
           },
           {
-              image: "https://i.ibb.co/cJjQ5mp/ayampop.webp",
+              image: "../assets/img/makanan/AYAM-POP.jpg",
               name: "Ayam Pop"
           }
       ]
@@ -811,15 +811,15 @@
     function loadTopTarian() {
       var list_top_tarian = [
           {
-              image: "https://i.ibb.co/8N84BD9/Tari-Payung.jpg",
+              image: "../assets/img/Tari/TARI-PAYUNG.jpg",
               name: "Tari Payung"
           },
           {
-              image: "https://i.ibb.co/SxyPcWx/tari-piring.jpg",
+              image: "../assets/img/Tari/TARI-PIRING.jpg",
               name: "Tari Piring"
           },
           {
-              image: "https://i.ibb.co/THfDcv3/tari-pasambahan.jpg",
+              image: "../assets/img/Tari/TARI-PASAMBAHAN.jpg",
               name: "Tari Pasambahan"
           }
       ]
@@ -851,15 +851,15 @@
     function loadTopAlatMusik() {
       var list_top_alat_musik = [
           {
-              image: "https://i.ibb.co/0Jcxwbh/gendang.webp",
+              image: "../assets/img/alat_musik/GENDANG.jpg",
               name: "Gendang"
           },
           {
-              image: "https://i.ibb.co/55WhBzL/serunai.jpg",
+              image: "../assets/img/alat_musik/SERUNAI.jpg",
               name: "Serunai"
           },
           {
-              image: "https://i.ibb.co/gzxsmXf/saluang.jpg",
+              image: "../assets/img/alat_musik/SALUANG.jpg",
               name: "Salunang"
           }
       ]
@@ -891,15 +891,15 @@
     function loadTopSenjata() {
       var list_top_senjata = [
           {
-              image: "https://i.ibb.co/1mmXPyV/SENJATA-KLEWANG.jpg",
+              image: "../assets/img/senjata/KLEWANG.jpg",
               name: "Klewang"
           },
           {
-              image: "https://i.ibb.co/v42nLD3/Kurambiak.jpg",
+              image: "../assets/img/senjata/KURAMBIAK.jpg",
               name: "Kurambiak"
           },
           {
-              image: "https://i.ibb.co/mvnVySV/piarik.jpg",
+              image: "../assets/img/senjata/PIARIK.jpg",
               name: "Piarik"
           }
       ]
@@ -928,9 +928,30 @@
         document.getElementById("list-top-senjata").innerHTML = html
     }
 
+    function scrollToMenu(menu) {
+      document.getElementById("card-menu").style.display = "block";
+      document.getElementById("card-menu").classList.add("easeAnimateToLeft");
+      document.getElementById("suku").style.display = "block";
+      document.getElementById("suku").classList.add("easeAnimateToLeft");
+      document.getElementById("bahasa").style.display = "block";
+      document.getElementById("bahasa").classList.add("easeAnimateToLeft");
+      document.getElementById("rumah").style.display = "block";
+      document.getElementById("rumah").classList.add("easeAnimateToLeft");
+      document.getElementById("pakaian").style.display = "block";
+      document.getElementById("pakaian").classList.add("easeAnimateToLeft");
+      document.getElementById("makanan").style.display = "block";
+      document.getElementById("makanan").classList.add("easeAnimateToLeft");
+      document.getElementById("kesenian").style.display = "block";
+      document.getElementById("kesenian").classList.add("easeAnimateToLeft");
+
+      document.getElementById(menu).scrollIntoView();
+    }
+
     window.onscroll = function() {scrollEffect()};
 
     function scrollEffect() {
+
+console.log(document.documentElement.scrollTop)
       // card-menu
       if(document.documentElement.scrollTop > 150 && document.documentElement.scrollTop <= 450) {
         document.getElementById("card-menu").style.display = "block";
@@ -968,28 +989,28 @@
       }
 
       // pakaian
-      if(document.documentElement.scrollTop > 1700 && document.documentElement.scrollTop <= 2100) {
+      if(document.documentElement.scrollTop > 1500 && document.documentElement.scrollTop <= 1900) {
         document.getElementById("pakaian").style.display = "block";
         document.getElementById("pakaian").classList.add("easeAnimateToLeft");
-      }else if(document.documentElement.scrollTop <= 1700) {
+      }else if(document.documentElement.scrollTop <= 1500) {
         document.getElementById("pakaian").style.display = "none";
         document.getElementById("pakaian").classList.remove("easeAnimateToLeft");
       }
 
       // makanan
-      if(document.documentElement.scrollTop > 2100 && document.documentElement.scrollTop <= 2300) {
+      if(document.documentElement.scrollTop > 1900 && document.documentElement.scrollTop <= 2200) {
         document.getElementById("makanan").style.display = "block";
         document.getElementById("makanan").classList.add("easeAnimateToLeft");
-      }else if(document.documentElement.scrollTop <= 2100) {
+      }else if(document.documentElement.scrollTop <= 1900) {
         document.getElementById("makanan").style.display = "none";
         document.getElementById("makanan").classList.remove("easeAnimateToLeft");
       }
 
       // kesenian
-      if(document.documentElement.scrollTop > 2600 && document.documentElement.scrollTop <= 2800) {
+      if(document.documentElement.scrollTop > 2200 && document.documentElement.scrollTop <= 2500) {
         document.getElementById("kesenian").style.display = "block";
         document.getElementById("kesenian").classList.add("easeAnimateToLeft");
-      }else if(document.documentElement.scrollTop <= 2600) {
+      }else if(document.documentElement.scrollTop <= 2200) {
         document.getElementById("kesenian").style.display = "none";
         document.getElementById("kesenian").classList.remove("easeAnimateToLeft");
       }

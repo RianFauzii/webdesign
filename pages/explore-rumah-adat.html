@@ -108,7 +108,7 @@
                 Jelajahi Suku, Rumah Adat, Bahasa, Pakaian Adat, hingga kesenian Khas Sumatera Barat!
               </p>
               <div class="github-buttons">
-                <a href="javascript:void(0)" onclick="scrollToTitle()" class="btn bg-gradient-primary mb-5 mb-sm-0">
+                <a href="javascript:void(0)" onclick="scrollToContent()" class="btn bg-gradient-primary mb-5 mb-sm-0">
                     Mulai!
                 </a>
               </div>
@@ -129,7 +129,7 @@
   <div class="card card-body mx-3 mx-md-4 mt-n6 mb-4">
     
     <!-- START EXPLORE RUMAH ADAT -->
-    <section class="py-3">
+    <section class="py-3" id="content">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -137,7 +137,6 @@
               <span class="material-icons" style="size:50px">
                 arrow_circle_left
               </span>
-              Kembali
             </a>
             <h3 id="title-explore-rumah-adat" class="easeAnimateToLeft">Jelajahi Rumah Adat Khas Sumatera Barat!</h3>
           </div>
@@ -252,61 +251,57 @@
         var list_explore_rumah_adat = [
             {
                 id: "head-image-11",
-                image: "../assets/img/rumah/rumahgadang.jpeg",
+                image: "../assets/img/rumah/RUMAH-GADANG.jpg",
                 name: "Rumah Gadang",
                 text: "Rumah Gadang adalah rumah tradisional dari suku minangkabau. Menurut bentuknya, rumah adat ini disebut rumah gonjong atau rumah bagonjong (rumah bergonjong), karena bentuk atapnya yang bergonjong runcing menjulang. Jika menurut ukurannya, tergantung pada jumlah lanjarnya ( ruas dari depan ke belakang ). Sedangkan ruangan yang berjajar dari kiri ke kanan disebut ruang. Rumah yang berlanjar dua dinamakan lipek pandan (lipat pandan). Umumnya lipek pandan memakai dua gonjong. Rumah yang berlanjar tiga disebut balah bubuang (belah bubung). Atapnya bergonjong empat. Sedangkan yang berlanjar empat disebut gajah maharam (gajah terbenam). Biasanya gajah maharam memakai gonjong enam atau lebih.",
                 sub_image: [
                     {
+                        id: "sub-image-0", // just change the number
+                        image: "../assets/img/rumah/RUMAH-GADANG.jpg",
+                    },
+                    {
                         id: "sub-image-1", // just change the number
-                        image: "../assets/img/rumah/rumahgadang1.jpg",
+                        image: "../assets/img/rumah/RUMAH-GADANG1.jpg",
                     },
                     {
                         id: "sub-image-2", // just change the number
-                        image: "../assets/img/rumah/rumahgadang2.jpg",
+                        image: "../assets/img/rumah/RUMAH-GADANG2.jpg",
                     },
                     {
                         id: "sub-image-3", // just change the number
-                        image: "../assets/img/rumah/rumahgadang3.jpg",
+                        image: "../assets/img/rumah/RUMAH-GADANG3.jpg",
                     }
                 ]
             },
             {
                 id: "head-image-21",
-                image: "../assets/img/rumah/rumahgonjongampek.jpg",
+                image: "../assets/img/rumah/RUMAH-GONJONG-AMPEK.jpg",
                 name: "Rumah Gonjong Ampek",
                 text: "Rumah adat ini merupakan rumah adat Padang yang wajib didirikan di daerah Luhak Nan Tigo. Rumah adat Ampek Baanjuang merupakan tanda adat bagi masyarakat setempat. Sesuai namanya ‘ampek’ yang berarti empat, bangunan rumah adat ini memiliki 4 buah gojong di atas atap dan punya lebih dari tujuh ruangan. Ciri khasnya, bangunan rumah adat ini punya tambahan anjung di sisi kiri dan kanan bangunan.",
                 sub_image: [
                     {
                         id: "sub-image-1", // just change the number
-                        image: "../assets/img/rumah/rumahgadang1.jpg",
+                        image: "../assets/img/rumah/RUMAH-GONJONG-AMPEK.jpg",
                     },
                     {
                         id: "sub-image-2", // just change the number
-                        image: "../assets/img/rumah/rumahgadang2.jpg",
-                    },
-                    {
-                        id: "sub-image-3", // just change the number
-                        image: "../assets/img/rumah/rumahgadang3.jpg",
+                        image: "../assets/img/rumah/RUMAH-GONJONG-AMPEK1.jpg",
                     }
                 ]
             },
             {
                 id: "head-image-31",
-                image: "../assets/img/rumah/rumahgonjonganam.jpg",
+                image: "../assets/img/rumah/RUMAH-GONJONG-ANAM.jpg",
                 name: "Rumah Gonjong Anam",
                 text: "Rumah adat ini adalah rumah adat Padang. Bentuk bangunannya mirip seperti Rumah Gadang Gajah Maharam, tetapi rumah adat ini sudah dimodifikasi dengan penambahan ukiran-ukiran khas Minangkabau sehingga menjadi bangunan beranjung. Rumah adat Gonjong Anam punya bangunan yang lebih modern dibandingkan rumah adat Padang lainnya. Salangkonya menggunakan papan dan bukan anyaman bambu. Kemudian jendelanya dibuat lebih banyak supaya pencahayaan bisa lebih banyak masuk ke dalam rumah.",
                 sub_image: [
                     {
                         id: "sub-image-1", // just change the number
-                        image: "../assets/img/rumah/rumahgadang1.jpg",
+                        image: "../assets/img/rumah/RUMAH-GONJONG-ANAM.jpg",
                     },
                     {
                         id: "sub-image-2", // just change the number
-                        image: "../assets/img/rumah/rumahgadang2.jpg",
-                    },
-                    {
-                        id: "sub-image-3", // just change the number
-                        image: "../assets/img/rumah/rumahgadang3.jpg",
+                        image: "../assets/img/rumah/RUMAH-GONJONG-ANAM1.jpg",
                     }
                 ]
             }
@@ -325,21 +320,17 @@
         var list_explore_rumah_adat = [
             {
                 id: "head-image-1",
-                image: "../assets/img/rumah/Rumah-Gadang-Batingkek.jpg",
+                image: "../assets/img/rumah/RUMAH-BATINGKEK.jpg",
                 name: "Rumah Gadang Batingkek",
                 text: "Sesuai dengan namanya, Rumah Gadang Batingkek ini terlihat unik karena bangunannya yang memiliki banyak tingkat. Desain dari rumah adat ini hampir mirip dengan Rumah Gadang Gajah Maharam. Hanya saja, Rumah Gadang Batingkek terlihat lebih besar dan lebih megah. Model bangunan Rumah Gadang Batingkek ini terdiri atas gonjong yang bertingkat-tingkat dengan bentuk yang runcing dan melengkung ke atas. Tidak hanya itu, terdapat juga dua gonjong yang menghadap ke depan rumah dan berfungsi sebagai jendela atau pelindung rumah. Sekilas, rumah adat ini terlihat kuno dan cukup tua, tetapi Rumah Gadang Batingkek ini dipercaya tahan gempa. Jika ingin melihat rumah adat yang satu ini di zaman sekarang, maka kita bisa mengunjungi wilayah Singkarak. Di daerah tersebut masih banyak masyarakat yang memiliki rumah dengan bentuk Rumah Gadang Batingkek. ",
                 sub_image: [
                     {
                         id: "sub-image-1", // just change the number
-                        image: "../assets/img/rumah/rumahgadang1.jpg",
+                        image: "../assets/img/rumah/RUMAH-BATINGKEK.jpg",
                     },
                     {
                         id: "sub-image-2", // just change the number
-                        image: "../assets/img/rumah/rumahgadang2.jpg",
-                    },
-                    {
-                        id: "sub-image-3", // just change the number
-                        image: "../assets/img/rumah/rumahgadang3.jpg",
+                        image: "../assets/img/rumah/RUMAH-BATINGKEK1.jpg",
                     }
                 ]
             }
@@ -357,7 +348,7 @@
             for (let j = 0; j < list_explore_rumah_adat[i].sub_image.length; j++) {
                 sub_image += 
                     `<a onclick="activeImage(this)" data-parent_id="`+list_explore_rumah_adat[i].id+`" data-id="`+list_explore_rumah_adat[i].sub_image[j].id+`" data-image="`+list_explore_rumah_adat[i].sub_image[j].image+`" data-name="`+list_explore_rumah_adat[i].name+`" class="list-rumah-adat-`+list_explore_rumah_adat[i].id+` `+list_explore_rumah_adat[i].sub_image[j].id+`">
-                        <img src="`+list_explore_rumah_adat[i].sub_image[j].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToLeft `+list_explore_rumah_adat[i].sub_image[j].id+`" loading="lazy" width="150">
+                        <img src="`+list_explore_rumah_adat[i].sub_image[j].image+`" alt="`+list_explore_rumah_adat[i].name+`" class="img-fluid shadow border-radius-lg easeAnimateToLeft `+list_explore_rumah_adat[i].sub_image[j].id+`" loading="lazy" width="150">
                     </a>`
             }
 
@@ -383,7 +374,7 @@
                                 <div class="col-12">
                                     <div class="card-header p-0 position-relative hovereffect" id="`+list_explore_rumah_adat[i].id+`">
                                         <a class="d-block blur-shadow-image">
-                                        <img src="`+list_explore_rumah_adat[i].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
+                                        <img src="`+list_explore_rumah_adat[i].image+`" alt="`+list_explore_rumah_adat[i].name+`" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
                                         <div class="overlay">
                                             <h2 class="text-light font-weight-bold">`+list_explore_rumah_adat[i].name+`</h2>
                                             <a class="info" href="`+list_explore_rumah_adat[i].video+`" target="_blank">
@@ -424,7 +415,7 @@
 
         var html = 
             `<a class="d-block blur-shadow-image">
-                <img src="`+image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
+                <img src="`+image+`" alt="`+name+`" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
                 <div class="overlay">
                     <h2 class="text-light font-weight-bold">`+name+`</h2>
                     <a class="info" href="`+image+`" target="_blank">
@@ -434,6 +425,10 @@
             </a>`
 
         document.getElementById(parent_id).innerHTML = html
+    }
+
+    function scrollToContent() {
+        document.getElementById('content').scrollIntoView();
     }
   </script>
 
