@@ -19,10 +19,11 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Jelajahi Makanan Khas Sumatera Barat!
+    Jelajahi Budaya Khas Sumatera Barat!
   </title>
   <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
   <!-- Nucleo Icons -->
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
@@ -33,115 +34,180 @@
   <!-- CSS Files -->
   <link id="pagestyle" href="../assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
   <link id="pagestyle" href="../assets/css/explore.css" rel="stylesheet" />
-  
+
   <style>
     .box {
-        align-self: flex-end;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+      align-self: flex-end;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
 
     .infinityBounce {
-        animation-name: infinityBounce;
-        animation-timing-function: ease;
-    }
-    
-    @keyframes infinityBounce {
-        0%   { transform: translateY(0); }
-        50%  { transform: translateY(-20px); }
-        100% { transform: translateY(0); }
+      animation-name: infinityBounce;
+      animation-timing-function: ease;
     }
 
-    .singleBounce{
-        width: 100%;
-        animation: singleBounce 2s;
+    @keyframes infinityBounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
     }
-    
+
+    .singleBounce {
+      width: 100%;
+      animation: singleBounce 2s;
+    }
+
     @keyframes singleBounce {
-        from {width: 0%;}
-        to {width: 100%;}
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 100%;
+      }
     }
-    
+
     /* Typewriter effect 1 */
     @keyframes typing {
-        0.0000%, 27.3488% { content: ""; }
-        1.1395%, 26.2093% { content: "d"; }
-        2.2791%, 25.0698% { content: "de"; }
-        3.4186%, 23.9302% { content: "dev"; }
-        4.5581%, 22.7907% { content: "deve"; }
-        5.6977%, 21.6512% { content: "devel"; }
-        6.8372%, 20.5116% { content: "develo"; }
-        7.9767%, 19.3721% { content: "develop"; }
-        9.1163%, 18.2326% { content: "develope"; }
-        10.2558%, 17.0930% { content: "developer"; }
 
-        30.7674%, 51.2791% { content: ""; }
-        31.9070%, 50.1395% { content: "w"; }
-        33.0465%, 49.0000% { content: "wr"; }
-        34.1860%, 47.8605% { content: "wri"; }
-        35.3256%, 46.7209% { content: "writ"; }
-        36.4651%, 45.5814% { content: "write"; }
-        37.6047%, 44.4419% { content: "writer"; }
+      0.0000%,
+      27.3488% {
+        content: "";
+      }
 
-        54.6977%, 75.2093% { content: ""; }
-        55.8372%, 74.0698% { content: "r"; }
-        56.9767%, 72.9302% { content: "re"; }
-        58.1163%, 71.7907% { content: "rea"; }
-        59.2558%, 70.6512% { content: "read"; }
-        60.3953%, 69.5116% { content: "reade"; }
-        61.5349%, 68.3721% { content: "reader"; }
+      1.1395%,
+      26.2093% {
+        content: "T";
+      }
 
-        78.6279%, 96.8605% { content: ""; }
-        79.7674%, 95.7209% { content: "h"; }
-        80.9070%, 94.5814% { content: "hu"; }
-        82.0465%, 93.4419% { content: "hum"; }
-        83.1860%, 92.3023% { content: "huma"; }
-        84.3256%, 91.1628% { content: "human"; }
+      2.2791%,
+      25.0698% {
+        content: "Tr";
+      }
+
+      3.4186%,
+      23.9302% {
+        content: "Tra";
+      }
+
+      4.5581%,
+      22.7907% {
+        content: "Trad";
+      }
+
+      5.6977%,
+      21.6512% {
+        content: "Tradi";
+      }
+
+      6.8372%,
+      20.5116% {
+        content: "Tradis";
+      }
+
+      7.9767%,
+      19.3721% {
+        content: "Tradisi";
+      }
+
+
+      30.7674%,
+      51.2791% {
+        content: "";
+      }
+
+      31.9070%,
+      50.1395% {
+        content: "B";
+      }
+
+      33.0465%,
+      49.0000% {
+        content: "Bu";
+      }
+
+      34.1860%,
+      47.8605% {
+        content: "Bud";
+      }
+
+      35.3256%,
+      46.7209% {
+        content: "Buda";
+      }
+
+      36.4651%,
+      45.5814% {
+        content: "Buday";
+      }
+
+      37.6047%,
+      44.4419% {
+        content: "Budaya";
+      }
+
+
     }
 
     @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
     }
 
     .typewriter {
-        --caret: currentcolor;
+      --caret: currentcolor;
     }
 
     .typewriter::before {
-        content: "";
-        animation: typing 13.5s infinite;
+      content: "";
+      animation: typing 13.5s infinite;
     }
 
     .typewriter::after {
-        content: "";
-        border-right: 1px solid var(--caret);
-        animation: blink 0.5s linear infinite;
+      content: "";
+      border-right: 1px solid var(--caret);
+      animation: blink 0.5s linear infinite;
     }
 
     .typewriter.thick::after {
-        border-right: 1ch solid var(--caret);
+      border-right: 1ch solid var(--caret);
     }
 
     .typewriter.nocaret::after {
-        border-right: 0;
+      border-right: 0;
     }
 
 
     @media (prefers-reduced-motion) {
-        .typewriter::after {
-            animation: none;
-        }
+      .typewriter::after {
+        animation: none;
+      }
     }
-    
-</style>
+  </style>
 
 </head>
 
 <body class="blog-author bg-gray-200">
-    
+
   <header>
-    <div class="page-header min-height-600" style="background-image: url('https://i.ibb.co/tbCDw4d/Budaya-Sumatera-Barat.png');" loading="lazy">
+    <div class="page-header min-height-600"
+      style="background-image: url('https://i.ibb.co/tbCDw4d/Budaya-Sumatera-Barat.png');" loading="lazy">
       <span class="mask"></span>
       <section class="my-md-4 mx-md-8 my-sm-3 mx-sm-7 my-xs-2 mx-xs-5">
         <div class="container">
@@ -150,35 +216,799 @@
               <h2 class="text-gradient text-primary mb-0 typewriter"></h2>
               <h2>Sumatera Barat</h2>
               <p class="pe-md-5 mb-4" style="color: black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugiat, officia ipsam ad
+                Sambutlah keanekaragaman budaya Sumatera Barat dengan hati terbuka di sini!
               </p>
               <div class="github-buttons">
                 <a href="javascript:void(0)" onclick="scrollToTitle()" class="btn bg-gradient-primary mb-5 mb-sm-0">
-                    Mulai!
+                  Mulai!
                 </a>
               </div>
             </div>
             <div class="col-md-5 col-12 my-auto box infinityBounce">
               <a href="javascript:void(0)">
-                <img class="border-radius-lg shadow-lg singleBounce" src="https://i.ibb.co/XxpYvdG/Screenshot-from-2023-02-20-13-20-43.png" alt="Product Image">
+                <img class="border-radius-lg shadow-lg singleBounce"
+                  src="https://i.ibb.co/XxpYvdG/Screenshot-from-2023-02-20-13-20-43.png" alt="Product Image">
               </a>
             </div>
           </div>
         </div>
-    </section>
+      </section>
     </div>
   </header>
-  <br><br><br>
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
-  <script src="../assets/js/plugins/parallax.min.js"></script>
-  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
-  <script src="../assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+
+  </br>
+  </br>
+  </br>
+
+  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+    <div class="container">
+      <div class="section text-center">
+
+
+      </div>
+    </div>
+
+
+    <div class="card" style="width: auto; height: auto; justify-content: center;">
+      <div class="card-header card-header-rose">
+        Keragaman Budaya di Sumatera Barat
+
+
+      </div>
+
+      <center>
+        <div class="row">
+
+          <div class="col-md-2 col-xs-12">
+            <div class="card" style="width: 10rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide4.jpg" rel="nofollow"
+                alt="Keragaman Suku Adat">
+              <div class="card-body">
+                <a href="#suku">Suku
+
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-xs-12">
+            <div class="card" style="width: 10rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide33.jpg" rel="nofollow"
+                alt="Keragaman Bahasa Daerah">
+              <div class="card-body">
+                <a href="#bahasa">Bahasa
+
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-12">
+            <div class="card" style="width: 10rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide25.jpg" rel="nofollow"
+                alt="Keragaman Rumah Adat">
+              <div class="card-body">
+                <a href="#rumah">Rumah Adat
+
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-12">
+            <div class="card" style="width: 10rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide34.JPG" rel="nofollow"
+                alt="Keragaman Pakaian Adat">
+              <div class="card-body">
+                <a href="#pakaian">Pakaian
+
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-xs-12">
+            <div class="card" style="width: 10rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide18.jpg" rel="nofollow"
+                alt="Card image cap">
+              <div class="card-body">
+                <a href="#makanan">Makanan
+
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-12">
+            <div class="card" style="width: 10rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide5.jpg" rel="nofollow"
+                alt="Kesenian Adat">
+              <div class="card-body">
+                <a href="#kesenian">Kesenian Adat
+
+                </a>
+              </div>
+            </div>
+          </div>
+
+         
+      </center>
+
+    </div>
+    </br>
+    </br>
+
+    <div class="card" id="suku" style="width: auto; height: auto; justify-content: center;">
+      <div class="card-header card-header-rose">
+        Suku Adat di sumatera Barat
+
+        <div style="align-items: end;">
+          <a href="explore-suku.html">Jelajahi!
+            <span class="material-icons">
+              arrow_circle_right
+            </span>
+          </a>
+        </div>
+
+      </div>
+
+      <center>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide4.jpg" rel="nofollow"
+                alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Suku Minangkabau</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide1.jpg" rel="nofollow"
+                alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Suku Mentawai</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem; ">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide2.jpg" rel="nofollow"
+                alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">Batak Mandailing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+
+    </div>
+
+    </br>
+    </br>
+
+    <div class="card" id="bahasa" style="width: auto; height: auto; justify-content: center;">
+      <div class="card-header">
+        Bahasa Daerah di Sumatera Barat
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="leftnav col-md-3 col-xs-12">
+            <ul style="list-style-type: none;">
+              <li><a href="#bahasa1" id="tombol1">Bahasa Minangkabau</a></li>
+              </br>
+              <li> <a href="#bahasa2" id="tombol2">Bahasa Batak Mandailing</a></li>
+              </br>
+              </br>
+              <li> <a href="#bahasa3" id="tombol3">Bahasa Mentawai</a></li>
+              </br>
+            </ul>
+
+
+
+          </div>
+          <div class="page-item col-md-9 col-xs-12">
+
+            <div class="bahasa1" id="bahasa1">
+              <h3>Bahasa Minangkabau</h3>
+             <p> &nbsp; &nbsp;  &nbsp; Bahasa Minangkabau adalah suatu bahasa Austronesia yang dituturkan oleh Suku Minangkabau yang berasal dari wilayah 
+                Dataran Tinggi Minangkabau di Sumatra Barat. Melalui diaspora masyarakat bersuku Minangkabau, bahasa ini juga dituturkan 
+                di beberapa wilayah lain terutama di daerah-daerah sekitar Sumatra Barat terutama di Sumatra Utara, Jambi, Bengkulu, sebagian Aceh, sebagian Riau, serta di wilayah luar negeri meliputi Negeri Sembilan di Semenanjung Kra, dan Singapura. 
+                Bahasa Minangkabau merupakan salah satu bahasa yang terdapat dalam rumpun bahasa Minangkabauik yang bercabang dari rumpun Malayo-Sumbawa yang diturunkan dari rumpun Malayo-Polinesia yang merupakan cabang dari rumpun bahasa Austronesia.
+              </p>
+
+
+            </div>
+            <div class="bahasa2 " id="bahasa2" style="display: none;">
+              <h3>Bahasa Batak Mandailing</h3>
+              <p> &nbsp; &nbsp;  &nbsp; Bahasa Mandailing atau Bahasa Mandahiling adalah bahasa yang mengembang di Sumatera Utara bagian selatan, Sumatera Barat bagian utara, dan Riau bagian utara. 
+                Mayoritas penuturnya menghuni kawasan Mandailing Natal, Padang Lawas, Padang Lawas Utara, Padangsidempuan, Pasaman, Pasaman Barat, dan Rokan Hulu. Bahasa Mandailing merupakan logat pautan dari bahasa Natal, yang merupakan dialek bahasa Minangkabau. 
+               </p>
+
+            </div>
+            <div class="bahasa3" id="bahasa3" style="display: none;">
+              <h3>Bahasa Mentawai </h3>
+              <p> &nbsp; &nbsp;  &nbsp; Bahasa Mentawai adalah sebuah bahasa dari rumpun Austronesia yang dipertuturkan di Mentawai, lepas pantai Sumatra Barat. Jumlah penutur bahasa ini sekitar 64.000 jiwa. Bahasa Mentawai dituturkan di Desa Monganpoula, Kecamatan Siberut Utara; Desa Maileppet, Kecamatan Siberut Selatan; dan Desa Sioban, Kecamatan Sipora, dan Desa Makalo, 
+                Kecamatan Pagai Selatan, Kabupaten Kepulauan Mentawai, Provinsi Sumatra Barat. Bahasa Mentawai terdiri atas tiga dialek, yaitu (1) dialek Siberut Utara, (2) dialek Siberut Selatan,dan (3) dialek Sipora Pagai. Dialek Siberut Utara dituturkan di Desa Monganpoula, Kecamatan Siberut Utara.  
+               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    </br>
+    </br>
+
+    <div class="card" id="rumah" style="width: auto; height: auto; justify-content: center;">
+      <div class="card-header card-header-rose">
+        Rumah Adat Khas Sumatera Barat
+
+        <div style="align-items: end;">
+          <a href="explore-rumah-adat.html">Jelajahi!
+            <span class="material-icons" style="size:150px">
+              arrow_circle_right
+            </span>
+          </a>
+        </div>
+
+      </div>
+
+      <center>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide25.jpg" rel="nofollow"
+                alt="Rumah Gadang">
+              <div class="card-body">
+                <p class="card-text">Rumah Gadang</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide26.jpg" rel="nofollow"
+                alt="Rumah Gonjong Ampek">
+              <div class="card-body">
+                <p class="card-text">Rumah Gonjong Ampek</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide27.jpg" rel="nofollow"
+                alt="Rumah Gonjong Anam">
+              <div class="card-body">
+                <p class="card-text">Rumah Gonjong Anam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+
+    </div>
+    </br>
+    </br>
+
+    <div class="card" id="pakaian" style="width: auto; height: auto; justify-content: center;">
+      <div class="card-header card-header-rose">
+        Pakaian Adat Khas Sumatera Barat
+
+        <div style="align-items: end;">
+          <a href="explore-pakaian-adat.html">Jelajahi!
+            <span class="material-icons" style="size:150px">
+              arrow_circle_right
+            </span>
+          </a>
+        </div>
+
+      </div>
+
+      <center>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide23.jpg" rel="nofollow"
+                alt="Rendang">
+              <div class="card-body">
+                <p class="card-text">Baju Batu Sangkar</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide24.jpg" rel="nofollow"
+                alt="Ayam Pop">
+              <div class="card-body">
+                <p class="card-text">Baju Batabue</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide22.jpg" rel="nofollow"
+                alt="Sate Padang">
+              <div class="card-body">
+                <p class="card-text">Baju Bundo Kanduang</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+
+    </div>
+    </br>
+    </br>
+
+   
+    
+    <div class="card" id="makanan" style="width: auto; height: auto; justify-content: center;">
+      <div class="card-header card-header-rose">
+        Makanan Khas Sumatera Barat
+
+        <div style="align-items: end;">
+          <a href="explore-makanan.html">Jelajahi!
+            <span class="material-icons" style="size:150px">
+              arrow_circle_right
+            </span>
+          </a>
+        </div>
+
+      </div>
+
+      <center>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide18.jpg" rel="nofollow"
+                alt="Rendang">
+              <div class="card-body">
+                <p class="card-text">Rendang</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide17.jpg" rel="nofollow"
+                alt="Ayam Pop">
+              <div class="card-body">
+                <p class="card-text">Ayam Pop</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <div class="card" style="width: 20rem; height: 15rem;">
+              <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide19.jpg" rel="nofollow"
+                alt="Sate Padang">
+              <div class="card-body">
+                <p class="card-text">Sate Padang</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+
+    </div>
+    </br>
+    </br>
+    <div class="card" id="kesenian" style="width: auto; height: auto; justify-content: center;">
+      <div class="card-header">
+        Kesenian Tradisional
+      </div>
+      <div class="card-body">
+        <div class="topnav">
+          <a href="#kategori1" id="btn1">Tarian Adat</a>
+          <a href="#kategori2" id="btn2">Alat Musik</a>
+          <a href="#kategori3" id="btn3">Senjata</a>
+        </div>
+
+        <div class="kategori1" id="kategori1">
+          <center>
+            <div class="row">
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide8.jpg"
+                    rel="nofollow" alt="Saluang">
+                  <div class="card-body">
+                    <strong>
+                      <p class="card-text">Tari Piring</p>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide6.jpg"
+                    rel="nofollow" alt="Sarunai">
+                  <div class="card-body">
+                    <strong>
+                      <p class="card-text">Tari Pasambahan Minang</p>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide5.jpg"
+                    rel="nofollow" alt="Bansi">
+                  <div class="card-body">
+                    <strong>
+                      <p class="card-text">Tari Ambek-Ambek Koto Anau</p>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
+          <div style="align-items: end;" class="mycard">
+            <a href="explore-tarian.html">Jelajahi Tarian!
+              <span class="material-icons" style="size:150px">
+                arrow_circle_right
+              </span>
+            </a>
+          </div>
+
+        </div>
+        <div class="kategori2 " id="kategori2" style="display: none;">
+          <center>
+            <div class="row">
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide14.jpg"
+                    rel="nofollow" alt="Saluang">
+                  <div class="card-body">
+                    <strong>
+                      <p class="card-text">Saluang</p>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide15.jpg"
+                    rel="nofollow" alt="Sarunai">
+                  <div class="card-body">
+                    <strong>
+                      <p class="card-text">Sarunai</p>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide13.jpg"
+                    rel="nofollow" alt="Bansi">
+                  <div class="card-body">
+                    <strong>
+                      <p class="card-text">Bansi</p>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
+
+          <div style="align-items: end;" class="mycard">
+            <a href="explore-alat-musik.html">Jelajahi Alat Musik!
+              <span class="material-icons" style="size:150px">
+                arrow_circle_right
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="kategori3" id="kategori3" style="display: none;">
+          <center>
+            <div class="row">
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide10.jpg"
+                    rel="nofollow" alt="Kerambit">
+                  <div class="card-body">
+                    <p class="card-text">Kerambit</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide11.jpg"
+                    rel="nofollow" alt="Ruduih">
+                  <div class="card-body">
+                    <p class="card-text">Ruduih</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-xs-12">
+                <div class="card" style="width: 20rem; height: 15rem;">
+                  <img class="card-img-top" style="height: 10rem;" src="../assets/img/carddepan/Slide9.jpg"
+                    rel="nofollow" alt="Bansi">
+                  <div class="card-body">
+                    <p class="card-text">Klewang Padang</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
+
+          <div style="align-items: end;" class="mycard">
+            <a href="explore-senjata.html">Jelajahi Senjata Tradisional!
+              <span class="material-icons" style="size:150px;">
+                arrow_circle_right
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   FOOTER  -->
+    <footer class="footer pt-5 mt-5">
+      <div class="container">
+        <div class=" row">
+          <div class="col-md-3 mb-4 ms-auto">
+            <div>
+              <a href="https://www.creative-tim.com/product/material-kit">
+                <img src="./assets/img/logo-ct-dark.png" class="mb-3 footer-logo" alt="main_logo">
+              </a>
+              <h6 class="font-weight-bolder mb-4">Material Kit 2</h6>
+            </div>
+            <div>
+              <ul class="d-flex flex-row ms-n3 nav">
+                <li class="nav-item">
+                  <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim/" target="_blank">
+                    <i class="fab fa-facebook text-lg opacity-8"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
+                    <i class="fab fa-twitter text-lg opacity-8"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pe-1" href="https://dribbble.com/creativetim" target="_blank">
+                    <i class="fab fa-dribbble text-lg opacity-8"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pe-1" href="https://github.com/creativetimofficial" target="_blank">
+                    <i class="fab fa-github text-lg opacity-8"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
+                    target="_blank">
+                    <i class="fab fa-youtube text-lg opacity-8"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div>
+              <h6 class="text-sm">Company</h6>
+              <ul class="flex-column ms-n3 nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
+                    About Us
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
+                    Freebies
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
+                    Premium Tools
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div>
+              <h6 class="text-sm">Resources</h6>
+              <ul class="flex-column ms-n3 nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://iradesign.io/" target="_blank">
+                    Illustrations
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/bits" target="_blank">
+                    Bits & Snippets
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/affiliates/new" target="_blank">
+                    Affiliate Program
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6 mb-4">
+            <div>
+              <h6 class="text-sm">Help & Support</h6>
+              <ul class="flex-column ms-n3 nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/contact-us" target="_blank">
+                    Contact Us
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/knowledge-center" target="_blank">
+                    Knowledge Center
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://services.creative-tim.com/?ref=ct-mk2-footer" target="_blank">
+                    Custom Development
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/sponsorships" target="_blank">
+                    Sponsorships
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+            <div>
+              <h6 class="text-sm">Legal</h6>
+              <ul class="flex-column ms-n3 nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/terms-of-service/"
+                    target="_blank">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/knowledge-center/privacy-policy/"
+                    target="_blank">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.creative-tim.com/license" target="_blank">
+                    Licenses (EULA)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="text-center">
+              <p class="text-dark my-4 text-sm font-weight-normal">
+                All rights reserved. Copyright ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script> Material Kit by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+    <br><br><br>
+
+
+    <script>
+
+      document.getElementById("btn1").addEventListener("click", function () {
+        document.querySelector(".kategori1").style.display = "block";
+        document.querySelector(".kategori2").style.display = "none";
+        document.querySelector(".kategori3").style.display = "none";
+        document.getElementById("btn1").classList.add("active");
+        document.getElementById("btn2").classList.remove("active");
+        document.getElementById("btn3").classList.remove("active");
+
+      });
+
+      document.getElementById("btn2").addEventListener("click", function () {
+        document.querySelector(".kategori1").style.display = "none";
+        document.querySelector(".kategori2").style.display = "block";
+        document.querySelector(".kategori3").style.display = "none";
+
+        document.getElementById("btn2").classList.add("active");
+
+        document.getElementById("btn1").classList.remove("active");
+        document.getElementById("btn3").classList.remove("active");
+
+      });
+
+      document.getElementById("btn3").addEventListener("click", function () {
+        document.querySelector(".kategori1").style.display = "none";
+        document.querySelector(".kategori2").style.display = "none";
+        document.querySelector(".kategori3").style.display = "block";
+        document.getElementById("btn1").classList.remove("active");
+        document.getElementById("btn2").classList.remove("active");
+        document.getElementById("btn3").classList.add("active");
+      });
+
+
+    </script>
+
+
+<script>
+
+  document.getElementById("tombol1").addEventListener("click", function () {
+    document.querySelector(".bahasa1").style.display = "block";
+    document.querySelector(".bahasa2").style.display = "none";
+    document.querySelector(".bahasa3").style.display = "none";
+    document.getElementById("tombol1").classList.add("active");
+    document.getElementById("tombol2").classList.remove("active");
+    document.getElementById("tombol3").classList.remove("active");
+
+  });
+
+  document.getElementById("tombol2").addEventListener("click", function () {
+    document.querySelector(".bahasa1").style.display = "none";
+    document.querySelector(".bahasa2").style.display = "block";
+    document.querySelector(".bahasa3").style.display = "none";
+
+    document.getElementById("tombol2").classList.add("active");
+
+    document.getElementById("tombol1").classList.remove("active");
+    document.getElementById("tombol3").classList.remove("active");
+
+  });
+
+  document.getElementById("tombol3").addEventListener("click", function () {
+    document.querySelector(".bahasa1").style.display = "none";
+    document.querySelector(".bahasa2").style.display = "none";
+    document.querySelector(".bahasa3").style.display = "block";
+    document.getElementById("tombol1").classList.remove("active");
+    document.getElementById("tombol2").classList.remove("active");
+    document.getElementById("tombol3").classList.add("active");
+  });
+
+
+</script>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+    <script src="../assets/js/plugins/parallax.min.js"></script>
+    <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+    <script src="../assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
 
 </body>
 

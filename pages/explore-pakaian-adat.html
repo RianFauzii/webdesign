@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-    Jelajahi Rumah Adat Khas Sumatera Barat!
+    Jelajahi Pakaian Adat Sumatera Barat!
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -35,28 +35,82 @@
   <link id="pagestyle" href="../assets/css/explore.css" rel="stylesheet" />
   
   <style>
-    div.scrollmenu {
-      background-color: #fff;
-      overflow: auto;
-      white-space: nowrap;
-    }
-    
-    div.scrollmenu a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px;
-      text-decoration: none;
-    }
-    
-    div.scrollmenu a:hover {
-      background-color: #d6d6c2;
-      border-radius: 20px;
+    @media screen and (max-width: 480px) {
+        div.scrollmenu {
+            background-color: #fff;
+            overflow-y: auto;
+            max-height: 130px;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 7px;
+            text-decoration: none;
+        }
+        
+        div.scrollmenu a:hover {
+            background-color: #d6d6c2;
+            border-radius: 10px;
+        }
+
+        div.scrollmenu a.active {
+            background-color: #d6d6c2;
+            border-radius: 10px;
+        }
     }
 
-    div.scrollmenu a.active {
-      background-color: #d6d6c2;
-      border-radius: 20px;
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+        div.scrollmenu {
+            background-color: #fff;
+            overflow-y: auto;
+            max-height: 200px;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        div.scrollmenu a:hover {
+            background-color: #d6d6c2;
+            border-radius: 15px;
+        }
+
+        div.scrollmenu a.active {
+            background-color: #d6d6c2;
+            border-radius: 15px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        div.scrollmenu {
+            background-color: #fff;
+            overflow-y: auto;
+            max-height: 270px;
+        }
+        
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+        
+        div.scrollmenu a:hover {
+            background-color: #d6d6c2;
+            border-radius: 20px;
+        }
+
+        div.scrollmenu a.active {
+            background-color: #d6d6c2;
+            border-radius: 20px;
+        }
     }
     
 </style>
@@ -460,12 +514,12 @@
   <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
   <div class="card card-body mx-3 mx-md-4 mt-n6 mb-4">
     
-    <!-- START EXPLORE RUMAH ADAT -->
+    <!-- START EXPLORE SENJATA -->
     <section class="py-3">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h3 id="title-explore-rumah-adat" class="easeAnimateToLeft">Jelajahi Rumah Adat Khas Sumatera Barat!</h3>
+            <h3 id="title-explore-rumah-adat" class="easeAnimateToLeft">Jelajahi Pakaian Adat Sumatera Barat!</h3>
           </div>
         </div>
         <div id="list-explore-rumah-adat">
@@ -493,7 +547,7 @@
 
       </div>
     </section>
-    <!-- END EXPLORE RUMAH ADAT -->
+    <!-- END EXPLORE SENJATA -->
 
   </div>
 
@@ -576,61 +630,69 @@
         var list_explore_rumah_adat = [
             {
                 id: "head-image-11",
-                image: "../assets/img/rumah/rumahgadang.jpeg",
-                name: "Rumah Gadang",
-                text: "Rumah Gadang adalah rumah tradisional dari suku minangkabau. Menurut bentuknya, rumah adat ini disebut rumah gonjong atau rumah bagonjong (rumah bergonjong), karena bentuk atapnya yang bergonjong runcing menjulang. Jika menurut ukurannya, tergantung pada jumlah lanjarnya ( ruas dari depan ke belakang ). Sedangkan ruangan yang berjajar dari kiri ke kanan disebut ruang. Rumah yang berlanjar dua dinamakan lipek pandan (lipat pandan). Umumnya lipek pandan memakai dua gonjong. Rumah yang berlanjar tiga disebut balah bubuang (belah bubung). Atapnya bergonjong empat. Sedangkan yang berlanjar empat disebut gajah maharam (gajah terbenam). Biasanya gajah maharam memakai gonjong enam atau lebih.",
+                image: "../assets/img/pakaian/Baju_Batusangkar.jpeg",
+                name: "Baju Batu Sangkar",
+                text: "Nama pakaian adat ini diambil dari salah satu kota di Sumatera Barat. Bentuk pakaiannya berupa karung dan songket, dimana pada bagian tangan dan leher ada sulaman emas. Sementara pada pria memakai celana panjang dan kain songket pada tubuhnya. Bagian tangan dan leher si border dengan benang emas. Pada bagian kepala menggunakan topeng yang dikenal dengan Saluak.",
                 sub_image: [
                     {
                         id: "sub-image-1", // just change the number
-                        image: "../assets/img/rumah/rumahgadang1.jpg",
+                        image: "../assets/img/pakaian/baju_batusangkar1.jpg",
                     },
                     {
                         id: "sub-image-2", // just change the number
-                        image: "../assets/img/rumah/rumahgadang2.jpg",
+                        image: "../assets/img/pakaian/baju_batusangkar2.jpg",
                     },
                     {
                         id: "sub-image-3", // just change the number
-                        image: "../assets/img/rumah/rumahgadang3.jpg",
+                        image: "../assets/img/pakaian/baju_batusangkar3.jpg",
                     }
+                    // {
+                    //     id: "sub-image-4", // just change the number
+                    //     image: "https://www.shutterstock.com/image-photo/example-word-written-on-wooden-260nw-1765482248.jpg",
+                    // },
+                    // {
+                    //     id: "sub-image-5", // just change the number
+                    //     image: "https://www.shutterstock.com/image-photo/example-word-written-on-wooden-260nw-1765482248.jpg",
+                    // }
                 ]
             },
             {
                 id: "head-image-21",
-                image: "../assets/img/rumah/rumahgonjongampek.jpg",
-                name: "Rumah Gonjong Ampek",
-                text: "Rumah adat ini merupakan rumah adat Padang yang wajib didirikan di daerah Luhak Nan Tigo. Rumah adat Ampek Baanjuang merupakan tanda adat bagi masyarakat setempat. Sesuai namanya ‘ampek’ yang berarti empat, bangunan rumah adat ini memiliki 4 buah gojong di atas atap dan punya lebih dari tujuh ruangan. Ciri khasnya, bangunan rumah adat ini punya tambahan anjung di sisi kiri dan kanan bangunan.",
+                image: "../assets/img/pakaian/Baju_Batabue.jpeg",
+                name: "Baju Batabue",
+                text: "Jika pakaian adat Sumatera Barat sebelumnya identik dengan warna mencolok, berbeda halnya dengan ini. Warna yang paling sering digunakan dalam Batabue adalah warna merah, biru, lembayung, dan hitam. Biasanya mengenakan busana berwarna gelap dengan taburan benang emas yang membuatnya semakin terlihat berkilauan. Taburan benang emas dalam pakaian adat Sumatera Barat ini memiliki makna filosofis yang cukup unik, yakni menandakan tentang betapa luasnya kekayaan alam Minangkabau. Baju batabue ini terdiri atas baju kurung serta pernak pernik di sekujur busana. Corak dan motifnya tentu bermacam-macam dan disesuikan dengan selera pemakainya.",
                 sub_image: [
                     {
-                        id: "sub-image-1", // just change the number
-                        image: "../assets/img/rumah/rumahgadang1.jpg",
+                        id: "sub-image-21", // just change the number
+                        image: "../assets/img/pakaian/baju_batabue1.jpg",
                     },
                     {
-                        id: "sub-image-2", // just change the number
-                        image: "../assets/img/rumah/rumahgadang2.jpg",
+                        id: "sub-image-22", // just change the number
+                        image: "../assets/img/pakaian/baju_batabue2.jpg",
                     },
                     {
-                        id: "sub-image-3", // just change the number
-                        image: "../assets/img/rumah/rumahgadang3.jpg",
+                        id: "sub-image-23", // just change the number
+                        image: "../assets/img/pakaian/baju_batabue3.jpg",
                     }
                 ]
             },
             {
                 id: "head-image-31",
-                image: "../assets/img/rumah/rumahgonjonganam.jpg",
-                name: "Rumah Gonjong Anam",
-                text: "Rumah adat ini adalah rumah adat Padang. Bentuk bangunannya mirip seperti Rumah Gadang Gajah Maharam, tetapi rumah adat ini sudah dimodifikasi dengan penambahan ukiran-ukiran khas Minangkabau sehingga menjadi bangunan beranjung. Rumah adat Gonjong Anam punya bangunan yang lebih modern dibandingkan rumah adat Padang lainnya. Salangkonya menggunakan papan dan bukan anyaman bambu. Kemudian jendelanya dibuat lebih banyak supaya pencahayaan bisa lebih banyak masuk ke dalam rumah.",
+                image: "../assets/img/pakaian/bajubundokanduang.jpeg",
+                name: "Baju Bundo Kanduang",
+                text: "Pakaian adat Sumatera Barat berikutnya biasa dipakai oleh kaum wanita Minangkabau. Limpapeh rumah nan gadang atau bundo kanduang ini memiliki ciri khas yaitu bagian kepalanya yang memiliki bentuk seperti atap rumah Gadang Sumatera Barat. Secara umum, pakaian ini memiliki desain yang berbeda-beda namun bentuknya menyerupai satu sama lain. Makna dan keunikan pakaian tradisional ini adalah melambangkan kebesaran. Makna kebesaran bagi perempuan terlebih para istri, yakni tiang tengah dari bangunan rumah. Peran istri atau ibu dalam rumah tangga yakni sebagai pengimbang serta memperkokoh hubungan keluarga.",
                 sub_image: [
                     {
-                        id: "sub-image-1", // just change the number
-                        image: "../assets/img/rumah/rumahgadang1.jpg",
+                        id: "sub-image-31", // just change the number
+                        image: "../assets/img/pakaian/bajubundokanduang1.jpeg",
                     },
                     {
-                        id: "sub-image-2", // just change the number
-                        image: "../assets/img/rumah/rumahgadang2.jpg",
+                        id: "sub-image-32", // just change the number
+                        image: "../assets/img/pakaian/bajubundokanduang2.jpeg",
                     },
                     {
-                        id: "sub-image-3", // just change the number
-                        image: "../assets/img/rumah/rumahgadang3.jpg",
+                        id: "sub-image-33", // just change the number
+                        image: "../assets/img/pakaian/bajubundokanduang3.jpeg",
                     }
                 ]
             }
@@ -649,25 +711,27 @@
         var list_explore_rumah_adat = [
             {
                 id: "head-image-1",
-                image: "../assets/img/rumah/Rumah-Gadang-Batingkek.jpg",
-                name: "Rumah Gadang Batingkek",
-                text: "Sesuai dengan namanya, Rumah Gadang Batingkek ini terlihat unik karena bangunannya yang memiliki banyak tingkat. Desain dari rumah adat ini hampir mirip dengan Rumah Gadang Gajah Maharam. Hanya saja, Rumah Gadang Batingkek terlihat lebih besar dan lebih megah. Model bangunan Rumah Gadang Batingkek ini terdiri atas gonjong yang bertingkat-tingkat dengan bentuk yang runcing dan melengkung ke atas. Tidak hanya itu, terdapat juga dua gonjong yang menghadap ke depan rumah dan berfungsi sebagai jendela atau pelindung rumah. Sekilas, rumah adat ini terlihat kuno dan cukup tua, tetapi Rumah Gadang Batingkek ini dipercaya tahan gempa. Jika ingin melihat rumah adat yang satu ini di zaman sekarang, maka kita bisa mengunjungi wilayah Singkarak. Di daerah tersebut masih banyak masyarakat yang memiliki rumah dengan bentuk Rumah Gadang Batingkek. ",
+                image: "../assets/img/pakaian/pakaian-penghulu.png",
+                name: "Pakaian Penghulu",
+                text: "Pakaian penghulu merupakan pakaian adat Minang yang digunakan oleh kaum pria. Baju ini juga disebut sebagai Baju Pemangku Adat. Baju ini tidak dapat digunakan oleh sembarang orang dan ada tata cara tertentu agar dapat mengenakannya. Jaman dulu, pakaian ini hanya boleh digunakan oleh kepala suku. Baju Penghulu memiliki warna hitam yang melambangkan ketegasan dan kepemimpinan. Kaum pria merupakan pemimpin wanita. Di samping itu, karena baju ini hanya boleh digunakan oleh kepala suku, maka baju ini juga melambangkan kepemimpinan suku.",
                 sub_image: [
                     {
-                        id: "sub-image-1", // just change the number
-                        image: "../assets/img/rumah/rumahgadang1.jpg",
+                        id: 1, // random integer unique
+                        image: "../assets/img/pakaian/pakaian-penghulu1.png",
                     },
                     {
-                        id: "sub-image-2", // just change the number
-                        image: "../assets/img/rumah/rumahgadang2.jpg",
+                        id: 2, // random integer unique
+                        image: "../assets/img/pakaian/pakaian-penghulu2.png",
                     },
                     {
-                        id: "sub-image-3", // just change the number
-                        image: "../assets/img/rumah/rumahgadang3.jpg",
+                        id: 3, // random integer unique
+                        image: "../assets/img/pakaian/pakaian-penghulu3.png",
                     }
                 ]
             }
         ]
+
+
 
         appendRumahAdat(list_explore_rumah_adat)
     }
@@ -680,7 +744,7 @@
 
             for (let j = 0; j < list_explore_rumah_adat[i].sub_image.length; j++) {
                 sub_image += 
-                    `<a onclick="activeImage(this)" data-parent_id="`+list_explore_rumah_adat[i].id+`" data-id="`+list_explore_rumah_adat[i].sub_image[j].id+`" data-image="`+list_explore_rumah_adat[i].sub_image[j].image+`" data-name="`+list_explore_rumah_adat[i].name+`" class="list-rumah-adat-`+list_explore_rumah_adat[i].id+` `+list_explore_rumah_adat[i].sub_image[j].id+`">
+                    `<a onclick="activeImage(this)" data-parent_id="`+list_explore_rumah_adat[i].id+`" data-id="`+list_explore_rumah_adat[i].sub_image[j].id+`" data-image="`+list_explore_rumah_adat[i].sub_image[j].image+`" data-name="`+list_explore_rumah_adat[i].name+`" class="list-alat-musik-`+list_explore_rumah_adat[i].id+` `+list_explore_rumah_adat[i].sub_image[j].id+` mt-2">
                         <img src="`+list_explore_rumah_adat[i].sub_image[j].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToLeft `+list_explore_rumah_adat[i].sub_image[j].id+`" loading="lazy" width="150">
                     </a>`
             }
@@ -704,7 +768,7 @@
                     <div class="col-lg-6 col-sm-12 col-md-12">
                         <div class="card card-plain">
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-8 d-flex align-items-stretch">
                                     <div class="card-header p-0 position-relative hovereffect" id="`+list_explore_rumah_adat[i].id+`">
                                         <a class="d-block blur-shadow-image">
                                         <img src="`+list_explore_rumah_adat[i].image+`" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg easeAnimateToBottom" loading="lazy">
@@ -718,7 +782,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 mt-3">
+                                <div class="col-4 d-flex align-items-stretch">
                                     <div class="scrollmenu">
                                         `+sub_image+`
                                     </div>
@@ -739,7 +803,7 @@
         var name = attribute.getAttribute("data-name")
         var parent_id = attribute.getAttribute("data-parent_id")
 
-        const activeElements = document.getElementsByClassName("list-rumah-adat-"+parent_id);
+        const activeElements = document.getElementsByClassName("list-alat-musik-"+parent_id);
         for (activeElement of activeElements) {
             activeElement.classList.remove('active');
         }
